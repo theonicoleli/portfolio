@@ -38,6 +38,7 @@ export class HeaderComponent {
 
   navigateTo(route: string) {
     this.router.navigate([route]);
+    this.toggleMenu();
   }
 
   isActive(route: string): boolean {
