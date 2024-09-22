@@ -311,29 +311,20 @@ img {
     }
 }
 
-@keyframes scrollImagesIpad {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-430%);
-    }
-}
-
-@keyframes scrollImagesMobile {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-460%);
-    }
-}
-
 .auto-scroll {
     animation: scrollImages 10s linear infinite;
 }
 
 @media (max-width: 768px) {
+
+    @keyframes scrollImagesMobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-460%);
+        }
+    }
 
     .landing-page {
         justify-content: center;
@@ -481,6 +472,15 @@ img {
 }
 
 @media (min-width: 900px) and (max-width: 1367px) {
+
+    @keyframes scrollImagesIpad {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-430%);
+        }
+    }
 
     .landing-page {
         font-size: 26px !important;
