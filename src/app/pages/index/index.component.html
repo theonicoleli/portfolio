@@ -1,0 +1,102 @@
+<div class="container">
+
+    <div class="landing-page">
+        <div class="content user-info">
+            <span class="hello-iam">
+                <p data-aos="fade-right">Olá, eu sou</p>
+                <h1 class="title" data-aos="fade-right">Théo Nicoleli</h1>
+            </span>
+            <p class="basic-info" data-aos="fade-right">Sou um desenvolvedor full-stack, com conhecimento e experiências em <span class="important">Dotnet, Angular, Spring Boot e React</span></p>
+            <div class="buttons-contact" data-aos="fade-right">
+                <button class="curriculo">
+                    <a class="download-curriculo" 
+                    href="assets/Théo Nicoleli - Currículo Português Atual (1).pdf" 
+                    download="curriculo.pdf">Currículo</a>
+                </button>
+                <button class="contate-me">
+                    <a class="mensagem-curriculo" href="https://w.app/theonicoleli">Contate-me</a>
+                </button>
+            </div>
+        </div>
+        <img src="assets/portfolio-web.png" alt="Foto Landing Page" data-aos="fade-left" class="landing-page-image">
+    </div>
+
+    <div class="about-me-container">
+        <div class="content about-me">
+            <h1 class="title" data-aos="fade-left">Sobre Mim</h1>
+            <p class="text profissional about-me" data-aos="fade-left">
+                Desde criança, sempre me perguntei como as coisas funcionam. 
+                Minha paixão pela tecnologia começou cedo, especialmente através dos jogos que tanto me entretinham. 
+                Em 2022, tive a oportunidade de iniciar um curso de desenvolvimento em Python, o que despertou ainda mais meu interesse pela área. 
+                Decidi então, cursar Sistemas de Informação para me tornar um desenvolvedor. 
+                Hoje, atuo como desenvolvedor full-stack, trabalhando com .NET, Angular, e React.
+            </p>
+            <p class="text hobbies about-me" data-aos="fade-left">
+                A música é outra grande paixão minha, toco piano desde os 8 anos de idade. 
+                Acredito que a música enriquece a vida, oferecendo uma perspectiva mais amável e romântica do mundo. 
+                Meu piano transforma meu mundo por completo. 
+                Além da música, sou piloto de corridas virtuais. 
+                Desde pequeno, percebi meu talento para corridas, uma área que já considerei seguir profissionalmente. A sensação de velocidade é viciante, sempre buscamos revivê-la. 
+                Por fim, sou entusiasta de jogos eletrônicos, com preferência por jogos de corrida e FPS.
+            </p>
+        </div>
+        <img src="assets/foto_portfolio (2).png" alt="Foto de Théo Nicoleli" data-aos="fade-right" class="mine-foto">
+    </div>
+
+    <!-- <section id="featured"  data-aos="fade-right">
+        <div class="loop-element" data-title="Languages and Frameworks">
+            <p class="skills-title">Skills</p>
+            <div class="marquee">
+                <div class="marquee--inner heading--md">
+                    <span>
+                        Angular, JavaScript, .NET, TypeScript, PHP, Vue.js, React.js, Kotlin, Spring Boot, Java, Node.js, Angular, JavaScript, .NET, TypeScript, PHP, Vue.js, React.js, Kotlin, Spring Boot, Java, Node.js
+                    </span>
+                    <span>
+                        Angular, JavaScript, .NET, TypeScript, PHP, Vue.js, React.js, Kotlin, Spring Boot, Java, Node.js, Angular, JavaScript, .NET, TypeScript, PHP, Vue.js, React.js, Kotlin, Spring Boot, Java, Node.js
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>     -->
+
+    <div class="container-skills">
+        <h1 data-aos="fade-right">Skills</h1>
+        <div class="skills-filter-option">
+            <div class="buttons-options" data-aos="fade-right">
+                <button 
+                    class="tech-skills" 
+                    [class.active]="activeSkill === 'techSkills'"
+                    (click)="showSkills('techSkills')"
+                >Technologies</button>
+                
+                <button 
+                    class="soft-skills" 
+                    [class.active]="activeSkill === 'softSkills'"
+                    (click)="showSkills('softSkills')"
+                >Soft Skills</button>
+    
+                <button 
+                    class="hard-skills" 
+                    [class.active]="activeSkill === 'hardSkills'"
+                    (click)="showSkills('hardSkills')"
+                >Hard Skills</button>
+    
+            </div>
+    
+            <div class="container-showing-selected-options"
+                (mousedown)="disableAutoScroll(containerImages)"
+                (mouseleave)="stopDrag(containerImages)"
+                (mouseup)="stopDrag(containerImages)"
+                #containerImages data-aos="fade-left">
+                
+                <div class="container-images-skills"
+                    (mousedown)="startDrag($event, containerImages)"
+                    (mouseup)="enableAutoScroll(containerImages)"
+                    [class.auto-scroll]="!isDragging">
+                    <img *ngFor="let image of selectedImages" [src]="image" alt="Technology Image" class="image-language"/>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+</div>

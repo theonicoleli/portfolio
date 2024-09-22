@@ -1,0 +1,48 @@
+<div class="contact-me">
+    <h1 class="title" data-aos="fade-down">Get in Touch</h1>
+    <div class="content">
+        <div *ngIf="successMessage" class="message success-message">
+            <button class="close-button" (click)="successMessage = null">X</button>
+            {{ successMessage }}
+        </div>
+        <div *ngIf="errorMessage" class="message error-message">
+            <button class="close-button" (click)="errorMessage = null">X</button>
+            {{ errorMessage }}
+        </div>
+        <form [formGroup]="form" (ngSubmit)="send()" class="register-contact" data-aos="fade-right">
+            <input 
+                formControlName="from_name" 
+                type="text" name="nome" 
+                placeholder="Name" required>
+            <input 
+                formControlName="from_email" 
+                type="email" name="email" 
+                placeholder="Email" required 
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Insira um email válido no formato: exemplo@dominio.com">
+            <textarea 
+                formControlName="message" name="message" 
+                cols="25" rows="5" placeholder="Enter your message" 
+                required>
+            </textarea>
+            <button type="submit" [disabled]="isLoading">
+                <span *ngIf="!isLoading">Submit</span>
+                <span *ngIf="isLoading" class="loading-spinner"></span>
+            </button>
+        </form>
+        <div class="theo-info" data-aos="fade-left">
+            <div class="content-person">
+                <h1>Instagram</h1>
+                <p>&#64;theonicoleli</p>
+            </div>
+            <div class="content-person">
+                <h1>Email</h1>
+                <p>theonicoleli&#64;gmail.com</p>
+            </div>
+            <div class="content-person">
+                <h1>Country</h1>
+                <p>Paraná, Brazil</p>
+            </div>
+        </div>
+    </div>
+</div>

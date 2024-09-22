@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="title" data-aos="fade-down">My Projects</h1>
+  
+  <button class="menu-button" (click)="toggleMenu()">Filter Options</button>
+  
+  <div class="container-options" [class.open]="menuOpen" data-aos="fade-right">
+    <p *ngFor="let option of options" 
+       [class.active]="selectedOption === option"
+       (click)="selectOption(option); closeMenu()">
+      {{ option }}
+    </p>
+  </div>
+  
+  <div class="container-project">
+    <div *ngFor="let project of filteredMessageText" class="project-content">
+      <app-work *ngIf="project" [project]="project"></app-work>
+    </div>
+  </div>
+</div>

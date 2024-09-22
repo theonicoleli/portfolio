@@ -1,0 +1,598 @@
+.container h1 {
+    color: #FFA688;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 88px;
+    font-family: "Roboto", sans-serif;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.text {
+    font-size: 20px;
+    color: #BCBCBD;
+    font-family: "Poppins", sans-serif !important;
+}
+
+img {
+    width: 30%;
+    margin-left: 120px;
+}
+
+.content {
+    width: 30%;
+}
+
+.important {
+    font-weight: bold;
+    display: contents;
+}
+
+.buttons-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-contact button {
+    width: 35%;
+    font-size: 32px;
+    margin: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #FFA688;
+    font-weight: bold;
+}
+
+.hello-iam {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+.curriculo {
+    background-color: #FFA688 !important;
+}
+
+.download-curriculo {
+    color: #202124 !important;
+}
+
+.buttons-contact button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3), 0 12px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.buttons-contact button:active {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2), 0 6px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+.curriculo {
+    margin-left: 0px !important;
+}
+
+.download-curriculo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mensagem-curriculo {
+    text-decoration: none;
+    color: #FFA688;
+}
+
+.basic-info {
+    font-family: 'Poppins', sans-serif !important;
+    color: #BCBCBD;
+}
+
+.title {
+    color: white;
+}
+
+.hello-iam p {
+    margin: 0px;
+}
+
+.about-me h1 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 60px;
+}
+
+.mine-foto {
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+// .skills-title {
+//     font-size: 36px;
+//     color: #FFA688;
+//     text-align: center;
+//     text-transform: uppercase;
+//     font-family: 'Poppins', sans-serif;
+//     margin-bottom: 20px;
+//     letter-spacing: 2px;
+//     font-weight: bold;
+// }
+
+// .loop-element {
+//     margin-top: 5rem;
+// }
+
+// .marquee {
+//     overflow: hidden;
+//     width: 100%;
+//     position: relative;
+//     background-color: black;
+// }
+
+// .marquee .marquee--inner {
+//     display: inline-flex;
+//     white-space: nowrap;
+//     animation: marquee 20s linear infinite;
+//     font-size: 24px;
+//     text-transform: uppercase;
+//     font-family: 'Poppins', sans-serif;
+//     color: #FFA688;
+//     padding: 20px;
+// }
+
+// @keyframes marquee {
+//     0% {
+//         transform: matrix(1, 0, 0, 1, 0, 0); 
+//         opacity: 1;
+//         -webkit-animation-timing-function: linear;
+//         animation-timing-function: linear;
+//     }
+//     100% {
+//         transform: matrix(1, 0, 0, 1, -2609.619140625, 0);
+//         opacity: 1;
+//     }
+// }
+
+// .marquee .marquee--inner span {
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .image-language {
+//     width: 4%;
+//     margin-left: 0px;
+//     margin: 20px;
+// }
+
+.container-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.buttons-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 16px;
+    width: 25%;
+}
+
+.container-skills h1 {
+    text-transform: uppercase;
+    padding-left: 8px;
+    border: 2px solid #FFA688;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #1b1c1f;
+    text-align: center;
+}
+
+.title-options-skills {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.title-options-skills h1 {
+    color: #FFA688;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.skills-filter-option {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+
+.skills-filter-option button {
+    background-color: transparent;
+    border: 2px solid #FFA688;
+    border-radius: 8px;
+    color: #BCBCBD;
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 16px;
+    height: 60%;
+    font-weight: bold;
+    color: #FFA688;
+    width: 100%;
+}
+
+.skills-filter-option button:first-child{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.skills-filter-option button:hover {
+    background-color: #FFA688;
+    color: #202124;
+}
+
+.skills-filter-option button.active {
+    background-color: #FFA688;
+    color: #202124;
+    border-color: #FFA688;
+}
+
+.container-showing-selected-options {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #1b1c1f;
+    border-radius: 12px;
+    padding: 8px;
+    border: 2px solid #FFA688;
+}
+
+.container-images-skills {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    cursor: grab;
+}
+
+.container-images-skills img {
+    width: 10%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.container-images-skills img:hover {
+    transform: scale(1.1);
+}
+
+.dragging {
+    cursor: grabbing;
+}
+
+.image-language {
+    user-select: none;
+    // pointer-events: none;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-140%);
+    }
+}
+
+@keyframes scrollImagesIpad {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-430%);
+    }
+}
+
+@keyframes scrollImagesMobile {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-460%);
+    }
+}
+
+.auto-scroll {
+    animation: scrollImages 10s linear infinite;
+}
+
+@media (max-width: 768px) {
+
+    .landing-page {
+        justify-content: center;
+        flex-direction: column-reverse;
+        font-size: 26px;
+        padding-top: 3rem;
+        padding-bottom: 8rem;
+    }
+
+    .hello-iam {
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    img {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        font-size: 3.2rem !important;
+    }
+
+    .basic-info {
+        display: flex;
+        padding: 30px;
+        flex-wrap: wrap;
+        font-size: 28px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        line-height: 45px;
+        text-align: left;
+    }
+
+    .buttons-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-contact button {
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 12px !important;
+    }
+
+    .text {
+        padding: 16px;
+    }
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marquee .marquee--inner {
+        font-size: 18px;
+        animation-duration: 15s;
+    }
+
+    .skills-title {
+        font-size: 40px;
+    }
+
+    .buttons-options {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    .container-skills {
+        width: 90%;
+        margin-top: 8rem;
+    }
+
+    .container-images-skills img {
+        width: 40%;
+    }
+
+    .skills-filter-option {
+        flex-direction: column;
+    }
+
+    .auto-scroll {
+        animation: scrollImagesMobile 6s linear infinite;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1367px) {
+
+    .landing-page {
+        font-size: 20px;
+        padding-bottom: 14rem !important;
+        padding-left: 3rem !important;
+    }
+
+    .hello-iam {
+        font-size: 20px !important;
+    }
+
+    .title {
+        font-size: 55px !important;
+    }
+
+    .text {
+        font-size: 14px !important;
+    }
+
+    img {
+        width: 45%;
+        margin-left: 8px;
+    }
+
+    .mine-foto, .content.about-me {
+        padding: 16px !important;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    .buttons-contact button {
+        width: 50%;
+        font-size: 20px;
+        margin: 8px;
+    }
+
+    .basic-info {
+        line-height: 40px;
+    }
+
+    .landing-page-image {
+        width: 51% !important;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1367px) {
+
+    .landing-page {
+        font-size: 26px !important;
+    }
+
+    .text {
+        font-size: 16px !important;
+    }
+
+    .hello-iam {
+        font-size: 26px !important;
+    }
+
+    .buttons-contact button {
+        width: 50%;
+        font-size: 26px !important;
+        margin: 8px;
+    }
+
+    .basic-info {
+        line-height: 45px !important;
+    }
+
+    .buttons-options {
+        width: 30%;
+    }
+
+    .container-images-skills img {
+        width: 30%;
+    }
+
+    .auto-scroll {
+        animation: scrollImagesIpad 8s linear infinite !important;
+    }
+
+    .buttons-options button{
+        font-size: 24px;
+    }
+
+    .container-skills {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1367px) {
+    .landing-page {
+        font-size: 28px !important;
+    }
+
+    .hello-iam {
+        font-size: 28px !important;
+    }
+
+    .buttons-contact button {
+        font-size: 30px !important;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1800px) {
+
+    .landing-page {
+        font-size: 36px;
+    }
+
+    .hello-iam {
+        font-size: 36px;
+    }
+
+    img {
+        width: 40%;
+        margin-left: 30px;
+    }
+
+    .content {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 70px !important;
+    }
+
+    .buttons-contact button { 
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1800px) and (max-width: 1859px) {
+    img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+    
+    .buttons-contact button{
+        width: 50%;
+        font-size: 28px;
+    }
+
+    .mine-foto {
+        width: 35%;
+    }
+
+    .landing-page {
+        font-size: 30px !important;
+    }
+
+    .hello-iam {
+        font-size: 30px !important;
+    }
+
+}

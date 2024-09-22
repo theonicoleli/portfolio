@@ -1,0 +1,23 @@
+<div class="card" data-aos="zoom-in-up">
+  <div class="card-image">
+    <h1>{{ project.name }}</h1>
+  </div>
+  <div class="card-content">
+    <div class="text-inside">
+      <div class="info-about-work">
+        <h1>{{ project.name }}</h1>
+        <p>{{ getText() }}</p>
+      </div>
+      <div class="languages">
+        <div class="whole-languages">
+          <div *ngFor="let language of getLanguages()" class="language-circle">
+            {{ language }}
+          </div>
+        </div>
+        <div class="github-link" *ngIf="project.github">
+          <a [href]="project.github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

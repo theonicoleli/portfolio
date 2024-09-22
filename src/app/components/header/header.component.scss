@@ -1,0 +1,117 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+header .username span {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+header .options {
+  display: flex;
+  gap: 60px;
+}
+
+header .options span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .options span a{
+  text-decoration: none;
+}
+
+header .options span:hover {
+  color: #FFA688;
+}
+
+header .options span.active {
+  color: #FFA688;
+}
+
+header .options span:hover {
+  color: #FFA688;
+}
+
+header .menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.username span {
+  color: #FFA688 !important;
+}
+
+@media (max-width: 768px) {
+  header {
+      justify-content: space-between;
+  }
+
+  header .options {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    background-color: #202124;
+    width: 100%;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    transition: border-radius 0.3s ease;
+    gap: 20px;
+  }
+
+  header .options.show-menu {
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-bottom: 16px;
+    padding-top: 8px;
+  }
+
+  header .menu-icon {
+    display: block;
+  }
+
+  header.no-radius {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+
+  header .options span i {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+
+  header .options {
+    gap: 40px;
+  }
+
+  header .options span {
+    font-size: 20px;
+  }
+}

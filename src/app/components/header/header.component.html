@@ -1,0 +1,25 @@
+<header>
+  <div class="username">
+    <span class="clickable" (click)="navigateTo('/')">Nicoleli's</span>
+  </div>
+  <div class="menu-icon" (click)="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <div class="options" [ngClass]="{'show-menu': isMenuOpen}">
+    <span class="clickable" 
+          [ngClass]="{'active': isActive('/')}" 
+          (click)="navigateTo('/')">
+      <i class="fa-solid fa-user"></i> Home
+    </span>
+    <span class="clickable" 
+          [ngClass]="{'active': isActive('/projects')}" 
+          (click)="navigateTo('/projects')">
+      <i class="fa-solid fa-folder"></i> Projetos
+    </span>
+    <span class="clickable" 
+          [ngClass]="{'active': isActive('/contact')}" 
+          (click)="navigateTo('/contact')">
+      <i class="fa-solid fa-user"></i> Contato
+    </span>      
+  </div>
+</header>
