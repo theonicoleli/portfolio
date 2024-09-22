@@ -13,5 +13,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './not-found.component.scss'
 })
 export class NotFoundComponent {
-
+  //Tela para erro 404 no projeto
 }
